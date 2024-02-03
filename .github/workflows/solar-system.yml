@@ -14,10 +14,10 @@ env:
     
 jobs:
     unit-testing:
-      container:
-        image: node:20
       name: Unit Testing
       runs-on: ubuntu-latest
+      container:
+        image: node:20
       steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
